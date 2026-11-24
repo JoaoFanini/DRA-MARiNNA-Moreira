@@ -1,0 +1,124 @@
+/* Estilos do site da Dra. Marinna Moreira */
+
+.skip-link { position: fixed; top: 1rem; left: 1rem; z-index: 200; padding: .75rem 1.25rem; background: var(--brass); color: #fff; transform: translateY(-200%); }
+.skip-link:focus { transform: none; }
+
+/* cabeçalho */
+.top { position: sticky; top: 0; z-index: 50; background: rgba(247, 250, 250, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.top__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: var(--nav-h); }
+.top__brand { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; color: var(--ivory); }
+.top__links { display: flex; gap: 28px; font-size: .95rem; color: var(--ivory-dim); }
+.top__links a:hover { color: var(--brass); }
+.top__cta { padding: 10px 20px; border-radius: 999px; background: var(--brass); color: #fff; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; }
+@media (max-width: 900px) { .top__links { display: none; } }
+
+/* hero */
+.hero { padding: clamp(4rem, 9vw, 7rem) 0 clamp(4rem, 8vw, 6rem); background: linear-gradient(160deg, #eef5f4 0%, var(--green-900) 60%); }
+.hero__grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: center; }
+.hero__title { font-size: var(--fs-display); margin: 18px 0 22px; color: var(--ivory); }
+.hero__lead { max-width: 34rem; margin-bottom: 34px; font-size: 1.1rem; }
+.hero__cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.card { background: #fff; border-radius: var(--radius-lg); padding: 32px; border: 1px solid #e3ecea; box-shadow: 0 20px 50px rgba(31, 111, 120, .12); }
+.card__title { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 14px; color: var(--ivory); }
+.card__row { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px dashed #dde7e6; font-size: .95rem; }
+.card__row:last-child { border-bottom: none; }
+.card__row b { color: var(--brass); font-weight: 500; text-align: right; }
+.ph-text { color: #8e9ba3 !important; font-style: italic; font-weight: 400 !important; }
+
+/* seções */
+.section { padding: var(--section-y) 0; }
+.section--alt { background: var(--green-850); }
+.section--dark { background: var(--brass-dark); color: #fff; }
+.subtitle { color: var(--ivory-dim); margin: 14px 0 44px; max-width: 640px; }
+.h2 { margin-top: 14px; font-size: var(--fs-h2); color: var(--ivory); }
+.h2--light { color: #fff; }
+.eyebrow--light { color: #bfe6e3; }
+.eyebrow--light::before { background: #bfe6e3; }
+
+/* sobre */
+.about { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
+.ph { aspect-ratio: 4 / 5; border-radius: var(--radius-lg); background: linear-gradient(135deg, #cfe6e4, #9cc9c6); display: flex; align-items: center; justify-content: center; text-align: center; padding: 28px; color: #2d5d5c; font-size: .95rem; }
+.about__p { color: var(--ivory-dim); margin: 16px 0; font-size: 1.05rem; }
+.creds { margin-top: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cred { background: #fff; border-radius: 14px; padding: 16px 18px; border: 1px solid #e3ecea; font-size: .95rem; }
+.cred strong { display: block; color: var(--brass); font-weight: 500; }
+
+/* grades */
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.tile { background: #fff; border-radius: 20px; padding: 30px 26px; border: 1px solid #e3ecea; transition: transform .2s, box-shadow .2s; }
+.tile:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0, 0, 0, .06); }
+.tile__n { display: inline-block; font-family: var(--font-display); font-size: 1.1rem; color: var(--brass); margin-bottom: 14px; }
+.tile__title { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px; color: var(--ivory); }
+.tile__text { color: var(--ivory-dim); font-size: .95rem; }
+
+/* como agendar */
+.steps { margin-top: 48px; gap: 28px; }
+.step { border-top: 2px solid rgba(255, 255, 255, .3); padding-top: 22px; }
+.step__n { display: block; font-family: var(--font-display); font-size: 2.6rem; color: #9fdcd8; line-height: 1; margin-bottom: 14px; }
+.step__title { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px; }
+.step__text { color: #d7ecea; font-size: .95rem; }
+
+/* avaliações */
+.reviews { display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: center; background: #fff; border-radius: 24px; padding: 40px; border: 1px solid #e3ecea; }
+.score { text-align: center; }
+.score__big { font-family: var(--font-display); font-size: 3.5rem; line-height: 1; color: var(--brass); }
+.score__stars { color: #e0b43a; letter-spacing: 3px; margin: 8px 0; }
+.score small { color: var(--ivory-dim); }
+.review-slot { border: 2px dashed #c9dedd; border-radius: 16px; padding: 26px; color: var(--ivory-dim); font-size: .95rem; }
+
+/* contato */
+.visit { text-align: center; background: linear-gradient(135deg, var(--brass), #2e8790); border-radius: 28px; padding: 56px 28px; color: #fff; }
+.visit__title { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 600; margin-bottom: 14px; color: #fff; }
+.visit__text { color: #e3f3f2; margin-bottom: 30px; font-size: 1.05rem; }
+.visit__info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; text-align: left; }
+.visit__info div { background: rgba(255, 255, 255, .12); border-radius: 16px; padding: 18px 20px; color: #e8f6f5; font-size: .95rem; }
+.visit__info b { display: block; color: #fff; font-weight: 500; margin-bottom: 4px; }
+
+/* rodapé */
+.foot { padding: 56px 0 28px; border-top: 1px solid var(--line); font-size: .95rem; }
+.foot__grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 36px; }
+.foot__name { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--ivory); }
+.foot__label { font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); margin-bottom: 8px; }
+.foot__muted { color: var(--ivory-mute); }
+.foot__links li { margin-bottom: 6px; }
+.foot__links a:hover, .foot a:hover { color: var(--brass); }
+.foot__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--ivory-mute); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 22px; }
+
+/* selo de prévia (fixo) */
+.f9-badge { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 99; display: flex; align-items: center; gap: 10px; background: #0d2b24; color: #f2f7f5; padding: 7px 18px 7px 7px; border-radius: 999px; font-size: 13px; box-shadow: 0 8px 24px rgba(0, 0, 0, .25); white-space: nowrap; }
+.f9-badge__logo { width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(145deg, #0f4d40, #072219); display: flex; align-items: center; justify-content: center; }
+.f9-badge__sep { opacity: .45; }
+
+@media (max-width: 900px) {
+  .hero__grid, .about, .reviews { grid-template-columns: 1fr; }
+  .grid3, .visit__info, .creds, .foot__grid { grid-template-columns: 1fr; }
+  .reviews { padding: 26px; gap: 22px; }
+  .f9-badge { font-size: 12px; }
+}
+
+/* entrada: cortina com a foto da doutora e o texto DRA. M.M */
+.curtain { position: fixed; inset: 0; z-index: 300; background: var(--brass-dark); overflow: hidden; }
+.curtain__bg { position: absolute; inset: 0; background-size: cover; background-position: center 20%; }
+.curtain__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(19, 75, 82, .55), rgba(10, 40, 44, .85)); }
+.curtain__text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.curtain__mask { overflow: hidden; display: inline-block; flex: none; }
+.curtain__space { display: inline-block; width: .9em; flex: none; }
+.curtain__letter { display: inline-block; font-family: var(--font-display); font-size: clamp(3rem, 9vw, 7rem); line-height: 1.15; color: #fff; letter-spacing: .04em; }
+
+/* título por palavra (revelação com máscara) */
+.hero__word { display: block; overflow: hidden; padding-bottom: .08em; }
+.hero__word > span { display: inline-block; }
+
+/* foto e cartão sobreposto */
+.hero__visual { position: relative; }
+.hero__photo { aspect-ratio: 4 / 5; border-radius: var(--radius-lg); overflow: hidden; background: linear-gradient(135deg, #cfe6e4, #9cc9c6); display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 30px 60px rgba(31, 111, 120, .18); }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.hero__visual .card { position: absolute; left: -36px; bottom: -36px; width: min(400px, 88%); }
+
+@media (max-width: 900px) {
+  .hero__visual .card { position: static; width: auto; margin-top: 20px; }
+  .hero__photo { aspect-ratio: 1 / 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .curtain { display: none; }
+}

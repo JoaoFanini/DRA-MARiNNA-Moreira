@@ -1,0 +1,52 @@
+/* Paleta clínica: fundo claro, azul-petróleo como cor de marca, tinta escura no texto.
+   Os nomes das variáveis vêm do template original; os valores são os deste site. */
+:root {
+  /* Superfícies (do fundo para a superfície) */
+  --green-950: #ffffff;
+  --green-900: #f7fafa;
+  --green-850: #eef5f4;
+  --green-800: #e4efed;
+  --green-700: #cfe3e0;
+  --green-600: #b5d3cf;
+  --green-400: #6f9a94;
+
+  /* Cor de marca */
+  --brass: #1f6f78;
+  --brass-soft: #2e8790;
+  --brass-dark: #134b52;
+  --amber: #3fa3a0;
+  --amber-glow: #3fa3a0;
+  --cherry: #1f6f78;
+
+  /* Texto */
+  --ivory: #1d2a33;
+  --ivory-dim: rgba(29, 42, 51, 0.74);
+  --ivory-mute: rgba(29, 42, 51, 0.55);
+  --line: rgba(29, 42, 51, 0.14);
+  --line-brass: rgba(31, 111, 120, 0.35);
+
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-brand: 'Noto Serif Display', 'Cormorant Garamond', serif;
+  --font-sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-display: clamp(3.4rem, 8vw, 7rem);
+  --fs-h1: clamp(2.8rem, 6vw, 5rem);
+  --fs-h2: clamp(2.2rem, 4.2vw, 3.6rem);
+  --fs-h3: clamp(1.4rem, 2vw, 1.8rem);
+  --fs-body: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
+  --fs-small: 0.875rem;
+  --fs-label: 0.75rem;
+
+  --tracking-label: 0.22em;
+
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --container: 1180px;
+  --section-y: clamp(5rem, 10vw, 8.5rem);
+  --radius: 2px;
+  --radius-lg: 18px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --nav-h: 76px;
+}
